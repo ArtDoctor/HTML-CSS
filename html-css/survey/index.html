@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">This is survey.</p>
+    <form id="survey-form" action="index.php" method="post">
+        <label id="name-label">What is your name?</label>
+        <input type="text" id="name" placeholder="Name"><br>
+
+        <label id="email-label">What is your email?</label>
+        <input type="text" id="email" placeholder="Email"><br>
+
+        <label id="number-label">What is your age?</label>
+        <input type="text" id="number" placeholder="Age"><br>
+
+        <label id="numbers">Choose a favourite number:</label>
+        <select name="number" id="dropdown">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="other">other</option>
+        </select><br>
+
+        <fieldset id="animals">
+            <input type="radio" value="1" name = "group1">I like cats<br>
+            <input type="radio" value="2" name = "group1">I like dogs<br>
+            <input type="radio" value="3" name = "group1">I like birds<br>
+        </fieldset>
+
+        <label for="colors">Select colors:</label><br>
+        <input type="checkbox" id="black" value="1" name="horns">black<br>
+        <input type="checkbox" id="red" value="2" name="horns">red<br>
+        <input type="checkbox" id="green" value="3" name="horns">green<br>
+
+        <label for="Comments">Comments:</label><br>
+        <textarea rows="14" cols="54" name="comments" placeholder="Comments..."></textarea><br>
+
+        <label for="submit">Submit:</label><br>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
